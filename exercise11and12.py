@@ -1,6 +1,7 @@
 #EXERCISE 11
 print("===START OF EXERCISE 11===")
 
+#11
 one_to_hundred = range(1, 101)
 
 for num in one_to_hundred:
@@ -15,3 +16,18 @@ for num in one_to_hundred:
 
 #EXERCISE 12
 print("===START OF EXERCISE 12===")
+
+#12
+print("How many pizzas do you want to order?")
+quantity = int(input())
+quantity += 1
+
+for pizza in range (1, quantity):
+    print("How many toppings for pizza {}?".format(pizza))
+    topping = int(input())
+    print('You have ordered a pizza with {} toppings.'.format(topping))
+    
+if quantity == 1:
+    print("Get outta me store if you ain't ordering any pizza!")
+else:
+    print('Thank you for your order of {} pizzas! Enjoy'.format(quantity - 1))
