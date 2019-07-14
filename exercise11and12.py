@@ -27,7 +27,7 @@ for pizza in range (1, quantity):
     topping = int(input())
     print('You have ordered a pizza with {} toppings.'.format(topping))
     
-if quantity == 1:
+if quantity < 2:
     print("Get outta me store if you ain't ordering any pizza!")
 else:
     print('Thank you for your order of {} pizzas! Enjoy'.format(quantity - 1))
